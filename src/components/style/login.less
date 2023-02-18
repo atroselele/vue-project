@@ -1,0 +1,75 @@
+.login {
+  background-color: #93defe;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bgImg {
+    margin-right: 100px;
+  }
+
+  /* 登录表单 */
+  .form-login {
+    position: relative;
+    padding: 10% 5% 0 5%;
+    background-color: #fff;
+    border-radius: 10px;
+
+    /* 头像 */
+    .loginBox-heard-headPortrait {
+      position: absolute;
+      // background-color: #93defe;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      padding: 2%;
+      border-radius: 50%;
+      background-color: #93defe;
+
+      div {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        img {
+          width: 50%;
+          height: 50%;
+        }
+      }
+    }
+
+    .loginBox-form {
+      width: 350px;
+
+      .title {
+        text-align: center;
+        font-weight: 400;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    /* 取消表单默认左外边距 */
+    /deep/.el-form-item__content {
+      margin-left: 0 !important;
+    }
+
+    .loginBut {
+      width: 100%;
+    }
+  }
+}
